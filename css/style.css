@@ -1,0 +1,162 @@
+:root {
+  --theme-green: #088466;
+  --theme-light-green: #12daa8;
+
+}
+
+body {
+  background-color: #191919;
+}
+
+/* header section start  */
+header .menu a::before {
+  content: '\F479';
+  font-family: 'bootstrap-icons';
+  font-size: 28px;
+  vertical-align: middle;
+}
+
+header .menu a:focus::before {
+  content: '\F62A';
+}
+
+header .fa-magnifying-glass {
+  color: var(--theme-green);
+}
+
+header .form-control:focus {
+  box-shadow: none;
+  border: 0;
+}
+
+header .trending-search-box {
+  display: none;
+}
+
+header .input-group:focus-within .trending-search-box {
+  display: block !important;
+}
+
+header .profile li {
+  cursor: pointer;
+}
+
+/* header section end  */
+
+/* hero section start */
+.hero .carousel-indicators [data-bs-target] {
+  width: 100px;
+  height: 2px;
+}
+
+.hero .carousel-control-prev,
+.hero .carousel-control-next {
+  background-color: #3c3c3ca9;
+  width: 50px;
+  height: 50px;
+  top: 40%;
+}
+
+/* hero section end */
+
+/* product section start */
+
+.products .carousel-control-prev,
+.products .carousel-control-next {
+  width: 30px;
+  height: 30px;
+  top: 25%;
+}
+
+/* product section end */
+
+/* Bank Offers scetion start  */
+.marquee-content {
+  display: flex;
+  gap: 10px;
+  width: max-content;
+  animation: scroll-left 20s linear infinite;
+}
+
+.offer {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.offer img {
+  width: 250px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-50%));
+  }
+}
+
+/* Bank Offers scetion end  */
+
+/* croma exclusive section start */
+.croma-exclusive .card a {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.croma-exclusive .card a:hover {
+  color: var(--theme-light-green);
+}
+
+/* croma exclusive section end */
+
+/* why croma section start  */
+.why-croma .carousel-control-prev,
+.why-croma .carousel-control-next {
+  width: 20px;
+  height: 20px;
+  top: 40%;
+}
+
+.why-croma .carousel-control-prev {
+  left: -15px;
+}
+
+.why-croma .carousel-control-next {
+  right: -15px;
+}
+
+/* why croma section end  */
+
+/* footer section start  */
+footer .social-icon .bi-youtube,
+footer .social-icon .fa-facebook-f,
+footer .social-icon .bi-twitter,
+footer .social-icon .fa-linkedin-in,
+footer .social-icon .fa-square-instagram,
+footer .useful-link a,
+footer .products a {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .social-icon .bi-youtube:hover {
+  color: #db1e1e;
+}
+
+footer .social-icon .fa-facebook-f:hover,
+footer .social-icon .bi-twitter:hover,
+footer .social-icon .fa-linkedin-in:hover {
+  color: #595fdc;
+}
+
+footer .social-icon .fa-square-instagram:hover{
+  color: #e3a0e9;
+}
+
+footer .useful-link a:hover,footer .products a:hover{
+  color: var(--theme-light-green);
+}
+/* footer section end  */

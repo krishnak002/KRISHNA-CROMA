@@ -1,0 +1,12 @@
+/* md */
+@media(min-width:768px){
+    
+}
+
+/* lg  */
+@media (min-width:992px){
+    .offer img{
+        width: 300px;
+    }
+
+}
